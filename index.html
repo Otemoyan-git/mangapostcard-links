@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mangapostcard — Complete Sets</title>
+<meta name="description" content="Every series from the @mangapostcard shelf reels. Original Japanese editions, shipped worldwide from CDJapan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #15100c;
+    --card: #221a14;
+    --card-edge: #3a2c21;
+    --text: #f4ece2;
+    --muted: #b9a998;
+    --vermillion: #c0392b;
+    --vermillion-hover: #d64535;
+    --lamp: #e8a25a;
+  }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  body {
+    margin: 0;
+    background: radial-gradient(ellipse at top, #2a1d13 0%, var(--bg) 60%) fixed, var(--bg);
+    color: var(--text);
+    font: 15px/1.5 Inter, system-ui, sans-serif;
+  }
+  main { max-width: 960px; margin: 0 auto; padding: 28px 16px 48px; }
+  a { color: inherit; }
+
+  header { text-align: center; margin-bottom: 28px; }
+  .handle { font: 700 30px/1.1 Oswald, sans-serif; letter-spacing: .02em; }
+  .handle span { color: var(--vermillion); }
+  .tagline { color: var(--muted); margin: 8px auto 0; max-width: 34em; }
+  .edition { display: inline-block; margin-top: 12px; padding: 4px 12px; border-radius: 999px;
+             border: 1px solid var(--lamp); color: var(--lamp); font-size: 12px; font-weight: 600;
+             letter-spacing: .06em; text-transform: uppercase; }
+
+  .label { font: 700 13px/1 Oswald, sans-serif; letter-spacing: .12em; text-transform: uppercase;
+           color: var(--lamp); margin: 0 0 12px; }
+
+  .featured { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 18px; align-items: center;
+              background: var(--card); border: 1px solid var(--card-edge); border-radius: 16px;
+              padding: 16px; margin-bottom: 36px; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+  .featured img { width: 100%; border-radius: 6px; box-shadow: 0 6px 18px rgba(0,0,0,.5); }
+  .featured h2 { font: 700 26px/1.15 Oswald, sans-serif; margin: 0 0 4px; }
+  .meta { color: var(--muted); font-size: 13px; margin: 0 0 14px; }
+
+  .btns { display: flex; flex-direction: column; gap: 8px; }
+  .btn { display: block; text-align: center; text-decoration: none; font-weight: 600; font-size: 14px;
+         padding: 11px 12px; border-radius: 10px; transition: background .15s; }
+  .btn-primary { background: var(--vermillion); color: #fff; }
+  .btn-primary:hover { background: var(--vermillion-hover); }
+  .btn-ghost { border: 1px solid var(--card-edge); color: var(--text); }
+  .btn-ghost:hover { background: #2d231b; }
+
+  .search { width: 100%; padding: 12px 14px; margin-bottom: 16px; border-radius: 10px;
+            border: 1px solid var(--card-edge); background: var(--card); color: var(--text); font: inherit; }
+  .search::placeholder { color: var(--muted); }
+
+  .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  @media (min-width: 640px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (min-width: 900px) { .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  .card { background: var(--card); border: 1px solid var(--card-edge); border-radius: 12px;
+          padding: 10px; display: flex; flex-direction: column; }
+  .card img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 4px; }
+  .card h3 { font: 700 16px/1.2 Oswald, sans-serif; margin: 10px 0 2px; }
+  .card .meta { margin-bottom: 10px; font-size: 12px; }
+  .card .btns { margin-top: auto; }
+  .card .btn { font-size: 12.5px; padding: 9px 6px; }
+  .empty { color: var(--muted); text-align: center; padding: 24px 0; display: none; }
+
+  footer { margin-top: 40px; color: var(--muted); font-size: 12px; text-align: center; line-height: 1.6; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="handle"><span>@</span>mangapostcard</div>
+    <p class="tagline">Every series from our shelf reels — complete sets shipped worldwide from Japan via CDJapan.</p>
+    <div class="edition">Original Japanese editions</div>
+  </header>
+
+  <section id="featured-section" hidden>
+    <p class="label">Just posted</p>
+    <div class="featured" id="featured"></div>
+  </section>
+
+  <section>
+    <p class="label">All series</p>
+    <input class="search" id="search" type="search" placeholder="Search a series…" aria-label="Search a series">
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty">No series found.</p>
+  </section>
+
+  <noscript><p class="meta" style="text-align:center">Please enable JavaScript to see the list.</p></noscript>
+
+  <footer>
+    Links on this page are affiliate links: if you buy through them, I may earn a small commission at no extra cost to you.<br>
+    Books are the original Japanese-language editions. Cover images belong to their respective publishers.
+  </footer>
+</main>
+
+<script>
+(async () => {
+  const res = await fetch("series.json", { cache: "no-cache" });
+  const { affiliate_base: base, series } = await res.json();
+
+  const q = (s) => encodeURIComponent(s.search_query).replace(/%20/g, "+");
+  const mangaLink = (s) => s.set_product
+    ? { href: base + "product%2F" + encodeURIComponent(s.set_product), text: "Complete set (Japanese)" }
+    : { href: base + "searchuni?q=" + q(s), text: "Find the manga (Japanese)" };
+  const goodsLink = (s) => ({ href: base + "searchuni?term.media_format=GOODS&q=" + q(s), text: "Figures & goods" });
+
+  const el = (tag, props = {}, ...children) => {
+    const node = Object.assign(document.createElement(tag), props);
+    node.append(...children);
+    return node;
+  };
+  const button = ({ href, text }, cls) =>
+    el("a", { href, textContent: text, className: "btn " + cls, rel: "sponsored noopener" });
+  const buttons = (s) => el("div", { className: "btns" },
+    button(mangaLink(s), "btn-primary"), button(goodsLink(s), "btn-ghost"));
+  const meta = (s) => el("p", { className: "meta", textContent: `${s.volumes} volumes · ${s.title_ja}` });
+  const cover = (s) => el("img", { src: s.cover, alt: `${s.title_en} volume 1 cover`, loading: "lazy" });
+
+  if (series.length) {
+    const s = series[0];
+    document.getElementById("featured").append(
+      cover(s),
+      el("div", {}, el("h2", { textContent: s.title_en }), meta(s), buttons(s)),
+    );
+    document.getElementById("featured-section").hidden = false;
+  }
+
+  const grid = document.getElementById("grid");
+  const cards = series.map((s) => {
+    const card = el("article", { className: "card" },
+      cover(s), el("h3", { textContent: s.title_en }), meta(s), buttons(s));
+    card.dataset.key = `${s.title_en} ${s.title_ja}`.toLowerCase();
+    grid.append(card);
+    return card;
+  });
+
+  document.getElementById("search").addEventListener("input", (e) => {
+    const term = e.target.value.trim().toLowerCase();
+    let shown = 0;
+    for (const card of cards) {
+      const match = card.dataset.key.includes(term);
+      card.hidden = !match;
+      shown += match;
+    }
+    document.getElementById("empty").style.display = shown ? "none" : "block";
+  });
+})();
+</script>
+</body>
+</html>

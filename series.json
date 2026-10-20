@@ -1,0 +1,185 @@
+{
+  "affiliate_base": "https://www.cdjapan.co.jp/aff/click.cgi/PytJTGW7Lok/7883/A856987/",
+  "series": [
+    {
+      "slug": "death-note",
+      "title_en": "Death Note",
+      "title_ja": "DEATH NOTE",
+      "volumes": 12,
+      "cover": "covers/death-note.jpg",
+      "search_query": "Death Note",
+      "set_product": null,
+      "updated": "2026-10-20"
+    },
+    {
+      "slug": "attack-on-titan",
+      "title_en": "Attack on Titan",
+      "title_ja": "進撃の巨人",
+      "volumes": 34,
+      "cover": "covers/attack-on-titan.jpg",
+      "search_query": "Attack on Titan",
+      "set_product": null,
+      "updated": "2026-10-20"
+    },
+    {
+      "slug": "my-dress-up-darling",
+      "title_en": "My Dress-Up Darling",
+      "title_ja": "その着せ替え人形は恋をする",
+      "volumes": 15,
+      "cover": "covers/my-dress-up-darling.jpg",
+      "search_query": "My Dress-Up Darling",
+      "set_product": null,
+      "updated": "2026-10-18"
+    },
+    {
+      "slug": "fairy-tail",
+      "title_en": "Fairy Tail",
+      "title_ja": "FAIRYTAIL",
+      "volumes": 63,
+      "cover": "covers/fairy-tail.jpg",
+      "search_query": "Fairy Tail",
+      "set_product": null,
+      "updated": "2026-10-17"
+    },
+    {
+      "slug": "reborn",
+      "title_en": "Reborn!",
+      "title_ja": "REBORN",
+      "volumes": 42,
+      "cover": "covers/reborn.jpg",
+      "search_query": "Reborn!",
+      "set_product": null,
+      "updated": "2026-10-17"
+    },
+    {
+      "slug": "tokyo-ghoul",
+      "title_en": "Tokyo Ghoul",
+      "title_ja": "東京喰種",
+      "volumes": 14,
+      "cover": "covers/tokyo-ghoul.jpg",
+      "search_query": "Tokyo Ghoul",
+      "set_product": null,
+      "updated": "2026-10-17"
+    },
+    {
+      "slug": "yu-yu-hakusho",
+      "title_en": "Yu Yu Hakusho",
+      "title_ja": "幽遊白書",
+      "volumes": 19,
+      "cover": "covers/yu-yu-hakusho.jpg",
+      "search_query": "Yu Yu Hakusho",
+      "set_product": null,
+      "updated": "2026-10-14"
+    },
+    {
+      "slug": "tokyo-ghoul-re",
+      "title_en": "Tokyo Ghoul:re",
+      "title_ja": "東京喰種re",
+      "volumes": 16,
+      "cover": "covers/tokyo-ghoul-re.jpg",
+      "search_query": "Tokyo Ghoul:re",
+      "set_product": null,
+      "updated": "2026-10-14"
+    },
+    {
+      "slug": "rurouni-kenshin",
+      "title_en": "Rurouni Kenshin",
+      "title_ja": "るろうに剣心",
+      "volumes": 28,
+      "cover": "covers/rurouni-kenshin.jpg",
+      "search_query": "Rurouni Kenshin",
+      "set_product": null,
+      "updated": "2026-10-10"
+    },
+    {
+      "slug": "chainsaw-man",
+      "title_en": "Chainsaw Man",
+      "title_ja": "チェンソーマン",
+      "volumes": 24,
+      "cover": "covers/chainsaw-man.jpg",
+      "search_query": "Chainsaw Man",
+      "set_product": null,
+      "updated": "2026-10-10"
+    },
+    {
+      "slug": "my-hero-academia",
+      "title_en": "My Hero Academia",
+      "title_ja": "僕のヒーローアカデミア",
+      "volumes": 42,
+      "cover": "covers/my-hero-academia.jpg",
+      "search_query": "My Hero Academia",
+      "set_product": null,
+      "updated": "2026-10-08"
+    },
+    {
+      "slug": "assassination-classroom",
+      "title_en": "Assassination Classroom",
+      "title_ja": "暗殺教室",
+      "volumes": 21,
+      "cover": "covers/assassination-classroom.jpg",
+      "search_query": "Assassination Classroom",
+      "set_product": null,
+      "updated": "2026-10-08"
+    },
+    {
+      "slug": "bleach",
+      "title_en": "Bleach",
+      "title_ja": "BLEACH",
+      "volumes": 74,
+      "cover": "covers/bleach.jpg",
+      "search_query": "Bleach",
+      "set_product": null,
+      "updated": "2026-10-07"
+    },
+    {
+      "slug": "jujutsu-kaisen",
+      "title_en": "Jujutsu Kaisen",
+      "title_ja": "呪術廻戦",
+      "volumes": 30,
+      "cover": "covers/jujutsu-kaisen.jpg",
+      "search_query": "Jujutsu Kaisen",
+      "set_product": null,
+      "updated": "2026-10-07"
+    },
+    {
+      "slug": "soul-eater",
+      "title_en": "Soul Eater",
+      "title_ja": "ソウルイーター",
+      "volumes": 25,
+      "cover": "covers/soul-eater.jpg",
+      "search_query": "Soul Eater",
+      "set_product": "NEODAI-130192",
+      "updated": "2026-10-06"
+    },
+    {
+      "slug": "ao-haru-ride",
+      "title_en": "Ao Haru Ride",
+      "title_ja": "アオハライド",
+      "volumes": 13,
+      "cover": "covers/ao-haru-ride.jpg",
+      "search_query": "Ao Haru Ride",
+      "set_product": null,
+      "updated": "2026-09-27"
+    },
+    {
+      "slug": "dr-stone",
+      "title_en": "Dr. Stone",
+      "title_ja": "Dr.STONE",
+      "volumes": 27,
+      "cover": "covers/dr-stone.jpg",
+      "search_query": "Dr. Stone",
+      "set_product": null,
+      "updated": "2026-09-21"
+    },
+    {
+      "slug": "demon-slayer",
+      "title_en": "Demon Slayer",
+      "title_ja": "鬼滅の刃",
+      "volumes": 23,
+      "cover": "covers/demon-slayer.jpg",
+      "search_query": "Demon Slayer",
+      "set_product": null,
+      "updated": "2026-09-14"
+    }
+  ]
+}
