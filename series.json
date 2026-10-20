@@ -7,6 +7,7 @@
       "title_ja": "DEATH NOTE",
       "volumes": 12,
       "cover": "covers/death-note.jpg",
+      "cover_version": "8e88c4c3",
       "search_query": "Death Note",
       "set_product": null,
       "updated": "2026-10-20"
@@ -17,6 +18,7 @@
       "title_ja": "進撃の巨人",
       "volumes": 34,
       "cover": "covers/attack-on-titan.jpg",
+      "cover_version": "de4f5280",
       "search_query": "Attack on Titan",
       "set_product": null,
       "updated": "2026-10-20"
@@ -27,6 +29,7 @@
       "title_ja": "その着せ替え人形は恋をする",
       "volumes": 15,
       "cover": "covers/my-dress-up-darling.jpg",
+      "cover_version": "a0977372",
       "search_query": "My Dress-Up Darling",
       "set_product": null,
       "updated": "2026-10-18"
@@ -37,6 +40,7 @@
       "title_ja": "FAIRYTAIL",
       "volumes": 63,
       "cover": "covers/fairy-tail.jpg",
+      "cover_version": "bd034467",
       "search_query": "Fairy Tail",
       "set_product": null,
       "updated": "2026-10-17"
@@ -47,6 +51,7 @@
       "title_ja": "REBORN",
       "volumes": 42,
       "cover": "covers/reborn.jpg",
+      "cover_version": "a10d683e",
       "search_query": "Reborn!",
       "set_product": null,
       "updated": "2026-10-17"
@@ -57,6 +62,7 @@
       "title_ja": "東京喰種",
       "volumes": 14,
       "cover": "covers/tokyo-ghoul.jpg",
+      "cover_version": "0dd1006d",
       "search_query": "Tokyo Ghoul",
       "set_product": null,
       "updated": "2026-10-17"
@@ -67,6 +73,7 @@
       "title_ja": "幽遊白書",
       "volumes": 19,
       "cover": "covers/yu-yu-hakusho.jpg",
+      "cover_version": "eec691b3",
       "search_query": "Yu Yu Hakusho",
       "set_product": null,
       "updated": "2026-10-14"
@@ -77,6 +84,7 @@
       "title_ja": "東京喰種re",
       "volumes": 16,
       "cover": "covers/tokyo-ghoul-re.jpg",
+      "cover_version": "3277e557",
       "search_query": "Tokyo Ghoul:re",
       "set_product": null,
       "updated": "2026-10-14"
@@ -87,6 +95,7 @@
       "title_ja": "るろうに剣心",
       "volumes": 28,
       "cover": "covers/rurouni-kenshin.jpg",
+      "cover_version": "e71981bb",
       "search_query": "Rurouni Kenshin",
       "set_product": null,
       "updated": "2026-10-10"
@@ -97,6 +106,7 @@
       "title_ja": "チェンソーマン",
       "volumes": 24,
       "cover": "covers/chainsaw-man.jpg",
+      "cover_version": "80ad5e00",
       "search_query": "Chainsaw Man",
       "set_product": null,
       "updated": "2026-10-10"
@@ -107,6 +117,7 @@
       "title_ja": "僕のヒーローアカデミア",
       "volumes": 42,
       "cover": "covers/my-hero-academia.jpg",
+      "cover_version": "ad7025d6",
       "search_query": "My Hero Academia",
       "set_product": null,
       "updated": "2026-10-08"
@@ -117,6 +128,7 @@
       "title_ja": "暗殺教室",
       "volumes": 21,
       "cover": "covers/assassination-classroom.jpg",
+      "cover_version": "c52a7f33",
       "search_query": "Assassination Classroom",
       "set_product": null,
       "updated": "2026-10-08"
@@ -127,6 +139,7 @@
       "title_ja": "BLEACH",
       "volumes": 74,
       "cover": "covers/bleach.jpg",
+      "cover_version": "2dc1a6af",
       "search_query": "Bleach",
       "set_product": null,
       "updated": "2026-10-07"
@@ -137,6 +150,7 @@
       "title_ja": "呪術廻戦",
       "volumes": 30,
       "cover": "covers/jujutsu-kaisen.jpg",
+      "cover_version": "2cc0e35e",
       "search_query": "Jujutsu Kaisen",
       "set_product": null,
       "updated": "2026-10-07"
@@ -147,6 +161,7 @@
       "title_ja": "ソウルイーター",
       "volumes": 25,
       "cover": "covers/soul-eater.jpg",
+      "cover_version": "d71b265d",
       "search_query": "Soul Eater",
       "set_product": "NEODAI-130192",
       "updated": "2026-10-06"
@@ -157,6 +172,7 @@
       "title_ja": "アオハライド",
       "volumes": 13,
       "cover": "covers/ao-haru-ride.jpg",
+      "cover_version": "d4e5acfb",
       "search_query": "Ao Haru Ride",
       "set_product": null,
       "updated": "2026-09-27"
@@ -167,6 +183,7 @@
       "title_ja": "Dr.STONE",
       "volumes": 27,
       "cover": "covers/dr-stone.jpg",
+      "cover_version": "3f707435",
       "search_query": "Dr. Stone",
       "set_product": null,
       "updated": "2026-09-21"
@@ -177,6 +194,7 @@
       "title_ja": "鬼滅の刃",
       "volumes": 23,
       "cover": "covers/demon-slayer.jpg",
+      "cover_version": "8953f57f",
       "search_query": "Demon Slayer",
       "set_product": null,
       "updated": "2026-09-14"

@@ -124,7 +124,9 @@
   const buttons = (s) => el("div", { className: "btns" },
     button(mangaLink(s), "btn-primary"), button(goodsLink(s), "btn-ghost"));
   const meta = (s) => el("p", { className: "meta", textContent: `${s.volumes} volumes · ${s.title_ja}` });
-  const cover = (s) => el("img", { src: s.cover, alt: `${s.title_en} volume 1 cover`, loading: "lazy" });
+  // ?v= is the thumbnail's content hash, so a replaced cover bypasses browser caches
+  const coverSrc = (s) => s.cover_version ? `${s.cover}?v=${s.cover_version}` : s.cover;
+  const cover = (s) => el("img", { src: coverSrc(s), alt: `${s.title_en} volume 1 cover`, loading: "lazy" });
 
   if (series.length) {
     const s = series[0];
