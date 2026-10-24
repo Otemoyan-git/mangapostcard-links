@@ -2,6 +2,39 @@
   "affiliate_base": "https://www.cdjapan.co.jp/aff/click.cgi/PytJTGW7Lok/7883/A856987/",
   "series": [
     {
+      "slug": "nisekoi",
+      "title_en": "Nisekoi",
+      "title_ja": "ニセコイ",
+      "volumes": 25,
+      "cover": "covers/nisekoi.jpg",
+      "cover_version": "2d505229",
+      "search_query": "Nisekoi",
+      "set_product": null,
+      "updated": "2026-10-24"
+    },
+    {
+      "slug": "your-lie-in-april",
+      "title_en": "Your Lie in April",
+      "title_ja": "四月は君の嘘",
+      "volumes": 11,
+      "cover": "covers/your-lie-in-april.jpg",
+      "cover_version": "ed91b9f0",
+      "search_query": "Your Lie in April",
+      "set_product": null,
+      "updated": "2026-10-24"
+    },
+    {
+      "slug": "kekkaishi",
+      "title_en": "Kekkaishi",
+      "title_ja": "結界師",
+      "volumes": 35,
+      "cover": "covers/kekkaishi.jpg",
+      "cover_version": "2c245cad",
+      "search_query": "Kekkaishi",
+      "set_product": null,
+      "updated": "2026-10-21"
+    },
+    {
       "slug": "death-note",
       "title_en": "Death Note",
       "title_ja": "DEATH NOTE",
